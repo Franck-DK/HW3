@@ -19,10 +19,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="post.php">Post</a>
-        <a class="nav-link" href="post-result.php">Post Result</a>
-        <a class="nav-link" href="get.php">Get</a>
-        <a class="nav-link" href="get-result.php">Get Result</a> 
+        <a class="nav-link" href="products.php">Products</a>
+        <a class="nav-link" href="orders.php">Orders</a>
+        <a class="nav-link" href="productswithorders.php">Products With Orders</a> 
       </div>
     </div>
   </div>
