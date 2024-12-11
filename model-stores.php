@@ -1,8 +1,8 @@
 <?php
-function selectOrders() {
+function selectStores() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT * FROM `orders`");
+        $stmt = $conn->prepare("SELECT * FROM `stores`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
