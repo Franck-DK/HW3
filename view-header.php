@@ -20,8 +20,8 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="products.php">Products</a>
-        <a class="nav-link" href="orders.php">Orders</a>
-        <a class="nav-link" href="productswithorders.php">Products With Orders</a> 
+        <a class="nav-link" href="stores.php">Stores</a>
+        <a class="nav-link" href="productswithstores.php">Products With Stores</a> 
       </div>
     </div>
   </div>
