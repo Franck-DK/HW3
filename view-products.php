@@ -7,7 +7,6 @@
       <th>Name</th>
       <th>Description</th>
       <th>Unit Price</th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -19,7 +18,6 @@ while ($product = $products->fetch_assoc()) {
     <td><?php echo $product['product_name']; ?></td>
     <td><?php echo $product['product_description']; ?></td>
     <td><?php echo $product['unit_price']; ?></td>
-    <td><a href="stores-by-products.php?id=<?php echo $product['product_id']; ?>">Stores</a></td>
   </tr>    
 <?php
 }
