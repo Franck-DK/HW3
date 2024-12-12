@@ -1,16 +1,10 @@
 <?php
-function selectProductsByStores($sid) {
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT distinct p.product_id, p.product_name, p.product_description, p.unit_price, o.store_id FROM products p JOIN orders o ON p.product_id = o.product_id WHERE o.store_id=?");
-        $stmt->bind_param("i", $sid);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $conn->close();
-        return $result;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
+require_once("util-db.php");
+require_once("model-orders-by-stores.php");
+
+$pageTitle= "Orders by Stores";
+include "view-header.php";
+$orders = selectOrdersByStores($_POST['oid']);
+include "view-orders-by-stores.php";
+include "view-footer.php";
 ?>
