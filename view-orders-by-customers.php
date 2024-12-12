@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-      <th>ID</th>
+      <th>Order ID</th>
       <th>DateTime</th>
       <th>Status</th>
       <th>Customer ID</th>
