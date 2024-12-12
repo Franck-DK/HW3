@@ -13,7 +13,7 @@ while ($product = $products->fetch_assoc()) {
           $stores = selectStoresByProducts($product['product_id']);
           while ($store = $stores->fetch_assoc()) {
           ?>
-            <li class="list-group-item">Store ID: <?php echo $store['store_id']; ?></li>
+            <li class="list-group-item"><h1>Store ID: <?php echo $store['store_id']; ?></h1></li>
             <li class="list-group-item">Store Name: <?php echo $store['store_name']; ?></li>
             <li class="list-group-item">Location: <?php echo $store['location']; ?></li>
             <li class="list-group-item">Quantity: <?php echo $store['total_quantity']; ?></li>
