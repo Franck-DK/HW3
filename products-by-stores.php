@@ -4,7 +4,7 @@ require_once("model-products-by-stores.php");
 
 $pageTitle= "Products by Stores";
 include "view-header.php";
-$products = selectProducts($_GET['id']);
+$products = selectProductsByStores($_GET['id']);
 include "view-products-by-stores.php";
 include "view-footer.php";
 ?>
