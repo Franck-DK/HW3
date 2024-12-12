@@ -21,7 +21,7 @@ while ($customer = $customers->fetch_assoc()) {
     <td><?php echo $customer['customer_lastname']; ?></td>
     <td><?php echo $customer['phone']; ?></td>
     <td><?php echo $customer['email']; ?></td>
-     <td><form method="post" action="orders-by-stores.php">
+     <td><form method="post" action="orders-by-customers.php">
       <input type="hidden" name="cid" value="<?php echo $customer['customer_id']; ?>">
       <button type="submit" class="btn btn-primary">Orders</button>
     </form></td>
