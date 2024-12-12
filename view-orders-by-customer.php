@@ -1,4 +1,4 @@
-<h1>Orders by Store</h1>
+<h1>Orders by Customer</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
