@@ -4,7 +4,7 @@
   </div>
   <div class="col-auto">    
     <?php
-include "view-products-newform.php";
+include "view-productswithstores-newform.php";
 ?>
   </div>
 </div>
