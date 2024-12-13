@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])){
   switch ($_POST['actionType']){
     case "Add":
-    insertProduct($_POST['pname'],$_POST['pdesc'],$_POST['pprice']);
+    insertProducts($_POST['pname'],$_POST['pdesc'],$_POST['pprice']);
     break;
   }
 }
