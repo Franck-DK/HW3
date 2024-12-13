@@ -23,7 +23,12 @@ while ($product = $products->fetch_assoc()) {
           while ($store = $stores->fetch_assoc()) {
           ?>
            
-          <li class="list-group-item"><h5>Store Name: <?php echo $store['store_name']; ?></h5> - Date: <?php echo $store['date']; ?> Quantity: <?php echo $store['quantity']; ?> </li>
+          <li class="list-group-item">
+            <div>
+              <div><h5>Store Name: <?php echo $store['store_name']; ?></h5></div>
+              <div> Date: <?php echo $store['date']; ?></div>
+              <div>Quantity: <?php echo $store['quantity']; ?></div>
+            </div></li>
           <?php
           }
           ?>
