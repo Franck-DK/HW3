@@ -32,7 +32,7 @@
             </div>
           <div class="mb-3">
               <label for="quantity<?php echo $product['product_id']; ?>" class="form-label">Quantity</label>
-              <input type="text" class="form-control" id="quantity<?php echo $store['inventory_id']; ?>" name="date" value="<?php echo $store['quantity']; ?>">
+              <input type="text" class="form-control" id="quantity<?php echo $store['inventory_id']; ?>" name="quantity" value="<?php echo $store['quantity']; ?>">
             </div>
          <input type="hidden" name="iid" value="<?php echo $store['inventory_id']; ?>">
          <input type = "hidden" name="actionType" value="Edit">
