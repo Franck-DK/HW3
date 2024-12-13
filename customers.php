@@ -25,7 +25,7 @@ if (isset($_POST['actionType'])){
     break;
 
      case "Delete":
-    if(deleteCustomer($_POST['cid'])) {
+    if(deleteCustomers($_POST['cid'])) {
      echo '<div class="alert alert-success" role="alert">Customer deleted</div>';
     } else {
       echo '<div class="alert alert-danger" role="alert">Error</div>';
