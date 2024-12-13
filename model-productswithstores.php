@@ -18,6 +18,8 @@ function selectStoresByProducts($sid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT 
     i.inventory_id,
+    i.product_id,
+    i.store_id,
     p.product_name,
     s.store_name,
     i.date,
