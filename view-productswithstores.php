@@ -28,7 +28,7 @@ while ($product = $products->fetch_assoc()) {
               <div><h6>Store Name: <?php echo $store['store_name']; ?></h6></div>
               <div>Date: <?php echo $store['date']; ?></div>
               <div>Quantity: <?php echo $store['quantity']; ?></div>
-              <div>
+              <div style="display: flex; flex-direction: row;">
                 <?php include "view-productswithstores-editform.php"; ?> 
               <form method="post" action="">
          <input type="hidden" name="pid" value="<?php echo $store['inventory_id']; ?>">
