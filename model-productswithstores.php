@@ -45,7 +45,7 @@ WHERE
 function insertInventory($pid, $sid, $date, $quantity) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare(INSERT INTO `inventory`(`product_id`, `store_id`, `date`, `quantity`) VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `inventory`(`product_id`, `store_id`, `date`, `quantity`) VALUES (?, ?, ?, ?)");
         $stmt->bind_param("iisi", $pid, $sid, $date, $quantity);
         $success = $stmt->execute();
         $conn->close();
