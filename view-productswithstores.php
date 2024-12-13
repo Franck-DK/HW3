@@ -6,7 +6,17 @@ while ($product = $products->fetch_assoc()) {
 ?>
    <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?php echo $product['product_name']; ?></h5>
+   <div class="row">
+  <div class="col">
+    <h5 class="card-title"><?php echo $product['product_name']; ?></h5>
+  </div>
+  <div class="col-auto">    
+    <?php
+include "view-stores-newform.php";
+?>
+  </div>
+</div>
+     
       <p class="card-text">
         <ul class="list-group">
           <?php
