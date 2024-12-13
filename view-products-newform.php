@@ -30,6 +30,7 @@
               <label for="pprice" class="form-label">Unit Price</label>
               <input type="text" class="form-control" id="pprice" name="pprice">
             </div>
+         <input type = "hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
 </form>
       </div>
