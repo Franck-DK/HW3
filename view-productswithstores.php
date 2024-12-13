@@ -22,7 +22,7 @@ while ($product = $products->fetch_assoc()) {
           $stores = selectStoresByProducts($product['product_id']);
           while ($store = $stores->fetch_assoc()) {
           ?>
-            <li class="list-group-item">< Inventory ID: <?php echo $store['inventory_id']; ?> - StoreID: <?php echo $store['store_id']; ?> - Date: <?php echo $store['date']; ?> Quantity: <?php echo $store['quantity']; ?>  <?php include "view-productswithstores-editform.php"; ?>
+            <li class="list-group-item">Inventory ID: <?php echo $store['inventory_id']; ?> - StoreID: <?php echo $store['s.store_id']; ?> - Date: <?php echo $store['date']; ?> Quantity: <?php echo $store['quantity']; ?>  <?php include "view-productswithstores-editform.php"; ?>
 
             <form method="post" action="">
          <input type="hidden" name="pid" value="<?php echo $store['inventory_id']; ?>">
