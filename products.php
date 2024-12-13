@@ -15,6 +15,14 @@ if (isset($_POST['actionType'])){
     }
     break;
 
+    case "Edit":
+    if(updateProducts($_POST['pname'],$_POST['pdesc'],$_POST['pprice'])) {
+     echo '<div class="alert alert-success" role="alert">Product Edited</div>';
+    } else {
+      echo '<div class="alert alert-danger" role="alert">Error</div>';
+    }
+    break;
+
      case "Delete":
     if(deleteProducts($_POST['pid'])) {
      echo '<div class="alert alert-success" role="alert">Product deleted</div>';
