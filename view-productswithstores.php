@@ -29,8 +29,8 @@ while ($product = $products->fetch_assoc()) {
               <div>Date: <?php echo $store['date']; ?></div>
               <div>Quantity: <?php echo $store['quantity']; ?></div>
               <div><li>
-                <div><?php include "view-productswithstores-editform.php"; ?> </div>
-              <div><form method="post" action="">
+                <?php include "view-productswithstores-editform.php"; ?> 
+              <form method="post" action="">
          <input type="hidden" name="pid" value="<?php echo $store['inventory_id']; ?>">
          <input type="hidden" name="actionType" value="Delete">
          <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?')">
@@ -39,7 +39,7 @@ while ($product = $products->fetch_assoc()) {
               <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
               </svg>
          </button>
-       </form>      </div>
+       </form> 
               </li></div>
               
             </div></li>
