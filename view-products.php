@@ -29,7 +29,9 @@ while ($product = $products->fetch_assoc()) {
     <td><?php echo $product['product_name']; ?></td>
     <td><?php echo $product['product_description']; ?></td>
     <td><?php echo $product['unit_price']; ?></td>
-    <td></td>
+    <td>  <?php
+include "view-products-editform.php";
+?></td>
     <td>
        <form method="post" action="">
          <input type="hidden" name="pid" value="<?php echo $product['product_id']; ?>">
