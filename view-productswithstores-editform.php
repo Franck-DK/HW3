@@ -1,3 +1,22 @@
+<!-- Debug the $store array -->
+<pre><?php print_r($store); ?></pre>
+
+<!-- Form Rendering -->
+<form method="post" action="">
+    <div class="mb-3">
+        <label for="pid<?php echo $store['inventory_id']; ?>" class="form-label">Product ID</label>
+        <input type="text" class="form-control" id="pid<?php echo $store['inventory_id']; ?>" 
+               name="pid" value="<?php echo isset($store['product_id']) ? $store['product_id'] : ''; ?>">
+    </div>
+    <div class="mb-3">
+        <label for="sid<?php echo $store['inventory_id']; ?>" class="form-label">Store ID</label>
+        <input type="text" class="form-control" id="sid<?php echo $store['inventory_id']; ?>" 
+               name="sid" value="<?php echo isset($store['store_id']) ? $store['store_id'] : ''; ?>">
+    </div>
+</form>
+
+
+
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editInventoryModal<?php echo $store['inventory_id']; ?>">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
