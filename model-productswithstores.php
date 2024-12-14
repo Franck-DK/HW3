@@ -44,6 +44,35 @@ WHERE
     }
 }
 
+function selectProductsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT * FROM `products` Order by product_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
+function selectStoresForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT * FROM `stores` Order by store_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertInventory($pid, $sid, $date, $quantity) {
     try {
         $conn = get_db_connection();
