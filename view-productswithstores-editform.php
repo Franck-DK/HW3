@@ -37,7 +37,7 @@
               include "view-store-input-list.php";
               ?>
              
-              <input type="text" class="form-control" id="sid<?php echo $store['inventory_id']; ?>" name="sid" value="<?php echo $store['store_id']; ?>">
+            
             </div>
            <div class="mb-3">
               <label for="date<?php echo $product['product_id']; ?>" class="form-label">Date</label>
