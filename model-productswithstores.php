@@ -47,7 +47,7 @@ WHERE
 function selectProductsForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT * FROM `products` Order by product_name");
+        $stmt = $conn->prepare("SELECT * FROM `products` Order by product_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -62,7 +62,7 @@ function selectProductsForInput() {
 function selectStoresForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT * FROM `stores` Order by store_name");
+        $stmt = $conn->prepare("SELECT * FROM `stores` Order by store_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
