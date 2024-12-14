@@ -32,7 +32,7 @@
               <label for="sid" class="form-label">Store Name</label>
 
              <?php
-              $storetList = selectStoresForInput();
+              $storeList = selectStoresForInput();
               include "view-store-input-list.php";
             ?>
              
