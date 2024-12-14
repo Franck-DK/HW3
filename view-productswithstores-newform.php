@@ -23,6 +23,7 @@
 
               <?php
               $productList = selectProductsForInput();
+              $selectedProduct = 0;
               include "view-product-input-list.php";
               ?>
                             
