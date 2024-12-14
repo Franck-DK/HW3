@@ -29,7 +29,14 @@
              
             </div>
            <div class="mb-3">
-              <label for="sid<?php echo $product['product_id']; ?>" class="form-label">Store ID</label>
+              <label for="sid<?php echo $product['product_id']; ?>" class="form-label">Store Name</label>
+
+              <?php
+              $storeList = selectStoresForInput();
+              $selectedStore = $store['store_id'];
+              include "view-store-input-list.php";
+              ?>
+             
               <input type="text" class="form-control" id="sid<?php echo $store['inventory_id']; ?>" name="sid" value="<?php echo $store['store_id']; ?>">
             </div>
            <div class="mb-3">
