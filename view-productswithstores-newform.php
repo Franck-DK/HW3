@@ -20,6 +20,12 @@
        <form method="post" action="">
             <div class="mb-3">
               <label for="pid" class="form-label">Product ID</label>
+
+<?php
+$productList = selectProductsForInput();
+include "view-product-input-list.php";
+?>
+              
               <input type="text" class="form-control" id="pid" name="pid">
             </div>
            <div class="mb-3">
