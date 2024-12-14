@@ -2,7 +2,7 @@
   <?php
 while($productItem = $productList->fetch_assoc()) {
 ?>
-    <option value="<?php echo $productItem['product_id']; ?>"><?php echo $productItem['product_id']; ?></option>
+    <option value="<?php echo $productItem['product_id']; ?>"><?php echo $productItem['product_name']; ?></option>
 <?php  
 }
 ?>
