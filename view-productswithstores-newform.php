@@ -19,7 +19,7 @@
       <div class="modal-body">
        <form method="post" action="">
             <div class="mb-3">
-              <label for="pid" class="form-label">Product ID</label>
+              <label for="pid" class="form-label">Product Name</label>
 
 <?php
 $productList = selectProductsForInput();
