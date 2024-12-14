@@ -21,16 +21,21 @@
             <div class="mb-3">
               <label for="pid" class="form-label">Product Name</label>
 
-<?php
-$productList = selectProductsForInput();
-include "view-product-input-list.php";
-?>
-              
+              <?php
+              $productList = selectProductsForInput();
+              include "view-product-input-list.php";
+              ?>
+                            
              
             </div>
            <div class="mb-3">
-              <label for="sid" class="form-label">Store ID</label>
-              <input type="text" class="form-control" id="sid" name="sid">
+              <label for="sid" class="form-label">Store Name</label>
+
+             <?php
+              $storetList = selectStoresForInput();
+              include "view-store-input-list.php";
+            ?>
+             
             </div>
            <div class="mb-3">
               <label for="date" class="form-label">Date</label>
