@@ -20,7 +20,13 @@
        <form method="post" action="">
             <div class="mb-3">
               <label for="pid<?php echo $product['product_id']; ?>" class="form-label">Product ID</label>
-              <input type="text" class="form-control" id="pid<?php echo $store['inventory_id']; ?>" name="pid" value="<?php echo $store['product_id']; ?>">
+
+               <?php
+              $productList = selectProductsForInput();
+              $selectedProduct = $store['product_id'];
+              include "view-product-input-list.php";
+              ?>
+             
             </div>
            <div class="mb-3">
               <label for="sid<?php echo $product['product_id']; ?>" class="form-label">Store ID</label>
