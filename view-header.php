@@ -19,11 +19,11 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="products.php">Products</a>
-        <a class="nav-link" href="stores.php">Stores</a>
+        <a class="nav-link" href="products.php">Cars</a>
+        <a class="nav-link" href="stores.php">Dealerships</a>
         <a class="nav-link" href="customers.php">Customers</a>
-        <a class="nav-link" href="productswithstores.php">Products With Stores</a> 
-        <a class="nav-link" href="products-chart.php">Products Chart</a> 
+        <a class="nav-link" href="productswithstores.php">Inventory</a> 
+        <a class="nav-link" href="products-chart.php">Cars</a> 
       </div>
     </div>
   </div>
