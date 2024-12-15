@@ -48,7 +48,7 @@ include "view-customers-editform.php";
     
      <td><form method="post" action="orders-by-customers.php">
       <input type="hidden" name="cid" value="<?php echo $customer['customer_id']; ?>">
-      <button type="submit" class="btn btn-primary">Orders</button>
+      <button type="submit" class="btn btn-primary">Transactions</button>
     </form></td>
   </tr>    
 <?php
