@@ -29,7 +29,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-custom w-100">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">AUTO-TRACK-BASE</a>
+        <a class="navbar-brand" href="#">AUTO-TRACK</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
