@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h1>Stores</h1>
+    <h1>Dealerships</h1>
   </div>
   <div class="col-auto">    
     <?php
@@ -12,7 +12,7 @@ include "view-stores-newform.php";
   <table class="table">
     <thead>
       <tr>
-      <th>ID</th>
+      <th>Dealership ID</th>
       <th>Name</th>
       <th>Location</th>
         <th></th>
@@ -41,7 +41,7 @@ include "view-stores-editform.php";
               </svg>
          </button>
        </form></td>
-    <td><a href="products-by-stores.php?id=<?php echo $store['store_id']; ?>">Products</a></td>
+    <td><a href="products-by-stores.php?id=<?php echo $store['store_id']; ?>">Make-Models</a></td>
   </tr>    
 <?php
 }
