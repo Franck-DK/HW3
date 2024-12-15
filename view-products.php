@@ -14,7 +14,11 @@
       <div class="col">
         <div class="card h-100 shadow">
           <!-- Placeholder Image -->
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+          <?php 
+  $imagePath = !empty($product['image_path']) ? htmlspecialchars($product['image_path']) : 'https://via.placeholder.com/300x200';
+?>
+<img src="<?php echo $imagePath; ?>" class="card-img-top" alt="Product Image">
+
           <div class="card-body">
             <h5 class="card-title">Make: <?php echo htmlspecialchars($product['product_name']); ?></h5>
             <p class="card-text">
