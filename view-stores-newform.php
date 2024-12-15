@@ -13,13 +13,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="newStoreModalLabel">New Store</h1>
+        <h1 class="modal-title fs-5" id="newStoreModalLabel">New Dealership</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
        <form method="post" action="">
             <div class="mb-3">
-              <label for="sname" class="form-label">Store Name</label>
+              <label for="sname" class="form-label">Dealership Name</label>
               <input type="text" class="form-control" id="sname" name="sname">
             </div>
            <div class="mb-3">
