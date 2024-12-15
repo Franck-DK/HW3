@@ -23,6 +23,7 @@
         <a class="nav-link" href="stores.php">Stores</a>
         <a class="nav-link" href="customers.php">Customers</a>
         <a class="nav-link" href="productswithstores.php">Products With Stores</a> 
+        <a class="nav-link" href="products-chart.php">Products Chart</a> 
       </div>
     </div>
   </div>
