@@ -13,21 +13,21 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="newProductModalLabel">New Product</h1>
+        <h1 class="modal-title fs-5" id="newProductModalLabel">New Make-Model</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
        <form method="post" action="">
             <div class="mb-3">
-              <label for="pname" class="form-label">Product Name</label>
+              <label for="pname" class="form-label">Make-Model Name</label>
               <input type="text" class="form-control" id="pname" name="pname">
             </div>
            <div class="mb-3">
-              <label for="pdesc" class="form-label">Product Description</label>
+              <label for="pdesc" class="form-label">Description</label>
               <input type="text" class="form-control" id="pdesc" name="pdesc">
             </div>
            <div class="mb-3">
-              <label for="pprice" class="form-label">Unit Price</label>
+              <label for="pprice" class="form-label">Avg Repair Cost</label>
               <input type="text" class="form-control" id="pprice" name="pprice">
             </div>
          <input type = "hidden" name="actionType" value="Add">
