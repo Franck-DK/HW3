@@ -1,5 +1,4 @@
-### Updated Code to Replace Table with Cards
-```php
+
 <div class="row">
   <div class="col">
     <h1>Make</h1>
@@ -47,4 +46,4 @@
     <?php } ?>
   </div>
 </div>
-```
+
