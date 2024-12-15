@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <h1>Products</h1>
+    <h1>Make</h1>
   </div>
   <div class="col-auto">    
     <?php
@@ -12,10 +12,10 @@ include "view-products-newform.php";
   <table class="table">
     <thead>
       <tr>
-      <th>ID</th>
-      <th>Name</th>
+      <th>Make ID</th>
+      <th>Make Name</th>
       <th>Description</th>
-      <th>Unit Price</th>
+      <th>Avg Repair Cost</th>
         <th></th>
         <th></th>
       </tr>
