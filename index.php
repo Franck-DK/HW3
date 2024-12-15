@@ -20,7 +20,7 @@ include "view-header.php";
     
     <!-- Image Section -->
     <div class="col-md-6">
-      <img src="https://via.placeholder.com/500x300" alt="Car Dealership" class="img-fluid rounded shadow">
+      <img src="Car-dealership.jpg" alt="Car Dealership" class="img-fluid rounded shadow">
     </div>
   </div>
 </div>
