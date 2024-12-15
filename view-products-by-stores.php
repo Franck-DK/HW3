@@ -1,13 +1,13 @@
-<h1>Products by Store</h1>
+<h1>Make-Model By Dealership</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
       <tr>
-      <th>ID</th>
+      <th>Make-Model ID</th>
       <th>Name</th>
       <th>Description</th>
-      <th>Unit Price</th>
-      <th>Store ID</th>
+      <th>Avg Repair Cost</th>
+      <th>Dealership ID</th>
       </tr>
     </thead>
     <tbody>
