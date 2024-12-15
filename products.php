@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("model-products.php");
 
-$pageTitle= "Products";
+$pageTitle= "Cars";
 include "view-header.php";
 
 if (isset($_POST['actionType'])){
