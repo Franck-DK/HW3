@@ -9,7 +9,7 @@ include "view-header.php";
     <!-- Text Section -->
     <div class="col-md-6">
       <h1 class="display-4 fw-bold">Welcome to Car Dealership Management</h1>
-      <p class="lead">Streamline your dealership operations with our all-in-one management system. From tracking your inventory to managing customers and generating insightful reports, we've got you covered. This website serves to present to you a sample of what our system implementation looks like.</p>
+      <p class="lead">Streamline your dealership operations with our all-in-one management system. From tracking your inventory to managing customers and generating insightful reports, we've got you covered. This website serves to present to you a sample of what our system implementation would look like for your auction company.</p>
       <ul class="list-unstyled">
         <li><i class="bi bi-check-circle-fill text-success"></i> Manage your car inventory efficiently</li>
         <li><i class="bi bi-check-circle-fill text-success"></i> Track dealership performance</li>
