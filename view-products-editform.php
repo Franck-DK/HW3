@@ -17,15 +17,15 @@
       <div class="modal-body">
        <form method="post" action="">
             <div class="mb-3">
-              <label for="pname<?php echo $product['product_id']; ?>" class="form-label">Product Name</label>
+              <label for="pname<?php echo $product['product_id']; ?>" class="form-label">Make-Model</label>
               <input type="text" class="form-control" id="pname<?php echo $product['product_id']; ?>" name="pname" value="<?php echo $product['product_name']; ?>">
             </div>
            <div class="mb-3">
-              <label for="pdesc<?php echo $product['product_id']; ?>" class="form-label">Product Description</label>
+              <label for="pdesc<?php echo $product['product_id']; ?>" class="form-label">Description</label>
               <input type="text" class="form-control" id="pdesc<?php echo $product['product_id']; ?>" name="pdesc" value="<?php echo $product['product_description']; ?>">
             </div>
            <div class="mb-3">
-              <label for="pprice<?php echo $product['product_id']; ?>" class="form-label">Unit Price</label>
+              <label for="pprice<?php echo $product['product_id']; ?>" class="form-label">Avg Repair Cost</label>
               <input type="text" class="form-control" id="pprice<?php echo $product['product_id']; ?>" name="pprice" value="<?php echo $product['unit_price']; ?>">
             </div>
          <input type="hidden" name="pid" value="<?php echo $product['product_id']; ?>">
