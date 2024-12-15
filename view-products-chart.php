@@ -14,7 +14,7 @@
       labels: [
          <?php
                   while ($product = $products->fetch_assoc()) {
-                  echo $product['productname'].", ";
+                  echo $product['product_name'].", ";
                   }
                   ?>
 
