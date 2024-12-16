@@ -19,7 +19,7 @@
       <div class="modal-body">
        <form method="post" action="">
             <div class="mb-3">
-              <label for="pid<?php echo $product['product_id']; ?>" class="form-label">Product Name</label>
+              <label for="pid<?php echo $product['product_id']; ?>" class="form-label">Make-Model Name</label>
 
                <?php
               $productList = selectProductsForInput();
@@ -29,7 +29,7 @@
              
             </div>
            <div class="mb-3">
-              <label for="sid<?php echo $product['product_id']; ?>" class="form-label">Store Name</label>
+              <label for="sid<?php echo $product['product_id']; ?>" class="form-label">Dealership Name</label>
 
               <?php
               $storeList = selectStoresForInput();
