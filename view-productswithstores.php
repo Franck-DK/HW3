@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-  <h1>Products with Stores</h1>
+  <h1>Make-Models with Dealerships</h1>
   </div>
   <div class="col-auto">    
     <?php
@@ -25,7 +25,7 @@ while ($product = $products->fetch_assoc()) {
            
           <li class="list-group-item">
             <div>
-              <div><h6>Store Name: <?php echo $store['store_name']; ?></h6></div>
+              <div><h6>DealershipName: <?php echo $store['store_name']; ?></h6></div>
               <div>Date: <?php echo $store['date']; ?></div>
               <div>Quantity: <?php echo $store['quantity']; ?></div>
               <div style="display: flex; flex-direction: row;">
