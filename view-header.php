@@ -39,7 +39,7 @@
               <a class="nav-link" href="/" id="home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.php" id="cars">Cars</a>
+              <a class="nav-link" href="products.php" id="cars">Make-Models</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="stores.php" id="dealerships">Dealerships</a>
@@ -48,7 +48,7 @@
               <a class="nav-link" href="customers.php" id="customers">Customers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="productswithstores.php" id="inventory">Inventory</a>
+              <a class="nav-link" href="productswithstores.php" id="inventory">Make-Models With Dealerships</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products-chart.php" id="carsChart">Cars Chart</a>
