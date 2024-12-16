@@ -40,7 +40,7 @@ include "view-header.php";
       <div class="card shadow">
         <div class="card-body">
           <h5 class="card-title">Customer Management</h5>
-          <p class="card-text">Maintain customer relationships, track purchases, and offer personalized services.</p>
+          <p class="card-text">Maintain customer relationships, track purchases, and offer personalized services such as repairs.</p>
         </div>
       </div>
     </div>
