@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("model-products-chart.php");
 
-$pageTitle= "Product Chart";
+$pageTitle= "Make-Model Chart";
 include "view-header.php";
 
 $products = selectProducts();
