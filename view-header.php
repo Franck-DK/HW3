@@ -51,7 +51,7 @@
               <a class="nav-link" href="productswithstores.php" id="inventory">Make-Models With Dealerships</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products-chart.php" id="carsChart">Cars Chart</a>
+              <a class="nav-link" href="products-chart.php" id="carsChart">Make-Models Chart</a>
             </li>
           </ul>
         </div>
