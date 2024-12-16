@@ -19,7 +19,7 @@
       <div class="modal-body">
        <form method="post" action="">
             <div class="mb-3">
-              <label for="pid" class="form-label">Product Name</label>
+              <label for="pid" class="form-label">Make-Model Name</label>
 
               <?php
               $productList = selectProductsForInput();
@@ -30,7 +30,7 @@
              
             </div>
            <div class="mb-3">
-              <label for="sid" class="form-label">Store Name</label>
+              <label for="sid" class="form-label">Dealership Name</label>
 
              <?php
               $storeList = selectStoresForInput();
