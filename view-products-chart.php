@@ -8,7 +8,7 @@ while ($row = $products->fetch_assoc()) {
 }
 ?>
 
-<h1>Products Chart</h1>
+<h1>Make-Model Chart</h1>
 <div>
   <canvas id="myChart"></canvas>
 </div>
