@@ -1,4 +1,3 @@
-
 <?php
 // Fetch data once and store it in an array
 $products = selectProducts();
@@ -6,8 +5,21 @@ $product_data = [];
 while ($row = $products->fetch_assoc()) {
     $product_data[] = $row; // Store each row in the array
 }
-?>
 
+// Generate a unique color for each bar
+function generateColors($count) {
+    $colors = [];
+    for ($i = 0; $i < $count; $i++) {
+        $r = rand(0, 255);
+        $g = rand(0, 255);
+        $b = rand(0, 255);
+        $colors[] = "rgba($r, $g, $b, 0.7)";
+    }
+    return $colors;
+}
+
+$unique_colors = generateColors(count($product_data));
+?>
 <h1>Make-Model Chart</h1>
 <div>
   <canvas id="myChart"></canvas>
@@ -36,6 +48,19 @@ while ($row = $products->fetch_assoc()) {
           echo implode(", ", $data);
           ?>
         ],
+        backgroundColor: [
+          <?php
+          // Assign unique colors
+          echo implode(", ", array_map(fn($color) => "'$color'", $unique_colors));
+          ?>
+        ],
+        borderColor: [
+          <?php
+          // Generate border colors with higher opacity
+          $borderColors = array_map(fn($color) => str_replace('0.7', '1', $color), $unique_colors);
+          echo implode(", ", array_map(fn($color) => "'$color'", $borderColors));
+          ?>
+        ],
         borderWidth: 1
       }]
     },
@@ -48,4 +73,3 @@ while ($row = $products->fetch_assoc()) {
     }
   });
 </script>
-
