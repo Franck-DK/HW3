@@ -1,15 +1,15 @@
-<h1>Orders by Customer</h1>
+<h1>Transactions by Customer</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
       <tr>
-      <th>Order ID</th>
+      <th>Transaction ID</th>
       <th>DateTime</th>
       <th>Status</th>
       <th>Customer ID</th>
-      <th>Store ID</th>
+      <th>Dealership ID</th>
         <th>Quantity</th>
-        <th>Total Amount</th>
+        <th>Total Amount </th>
       </tr>
     </thead>
     <tbody>
