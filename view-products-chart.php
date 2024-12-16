@@ -20,11 +20,49 @@ function generateColors($count) {
 
 $unique_colors = generateColors(count($product_data));
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-Model Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Styling to add margin and center the chart */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #chart-container {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
 <h1>Make-Model Chart</h1>
-<div>
-  <canvas id="myChart"></canvas>
+<p>
+    The availability of cars at auctions can vary due to several key factors. These include the condition and age of vehicles, market demand, seasonality, and economic trends. For example, vehicles from **fleet turnovers**, insurance companies, or lease expirations can contribute to auction availability. Moreover, **natural disasters** or recalls may result in sudden surges of cars entering the auction market. Buyers should also note that higher demand for specific models can reduce availability while increasing competition.
+</p>
+
+<div id="chart-container">
+    <canvas id="myChart"></canvas>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
   const ctx = document.getElementById('myChart');
@@ -69,7 +107,16 @@ $unique_colors = generateColors(count($product_data));
         y: {
           beginAtZero: true
         }
+      },
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top'
+        }
       }
     }
   });
 </script>
+</body>
+</html>
