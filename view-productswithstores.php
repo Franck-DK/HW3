@@ -14,10 +14,8 @@ while ($product = $products->fetch_assoc()) {
 ?>
   <div class="card mb-3" style="flex: 0 1 450px;"> <!-- Adjust width -->
     <div class="row g-0">
-      <div class="col-md-4">
-        <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="Product Image">
-      </div>
-      <div class="col-md-8">
+     
+     <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title"><?php echo $product['product_name']; ?></h5>
           <p class="card-text">
